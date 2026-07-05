@@ -1,10 +1,6 @@
 import axios from 'axios';
 
-/**
- * Preconfigured Axios instance for talking to the backend API.
- * Automatically attaches the JWT token (if present) to every request,
- * and redirects to /login on a 401 response (expired/invalid session).
- */
+
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 const api = axios.create({
